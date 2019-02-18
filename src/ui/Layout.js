@@ -34,7 +34,9 @@ const Layout = ({ children }) => {
     <>
       <GlobalStyles />
       {children}
-      <Footer>Built with Gastby.</Footer>
+      <Footer>
+        Built with Gastby. <a href="/rss.xml">RSS</a>{" "}
+      </Footer>
     </>
   );
 };

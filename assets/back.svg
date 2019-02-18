@@ -1,0 +1,26 @@
+<svg width="77px" height="77px" viewBox="0 0 77 77" version="1.1" xmlns="http://www.w3.org/2000/svg"
+>
+    <defs>
+        <filter x="-83.0%" y="-83.0%" width="266.0%" height="266.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"
+                           result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy" transform="translate(-10.000000, -46.000000)">
+            <g id="Group-3" transform="translate(25.000000, 56.000000)">
+                <g id="icon-cheveron-left-circle" filter="url(#filter-1)">
+                    <circle id="Oval" fill="#19283C" cx="23.5" cy="23.5" r="23.5"></circle>
+                    <path d="M27.5242593,30.2448814 C28.2344797,31.1792433 28.1403082,32.4867073 27.3033054,33.3125744 C26.4663027,34.1384415 25.1412095,34.2313601 24.194249,33.5305886 L14.6799338,24.1428536 C13.7733554,23.2302637 13.7733554,21.7697363 14.6799338,20.8571464 L24.194249,11.4694114 C25.1412095,10.7686399 26.4663027,10.8615585 27.3033054,11.6874256 C28.1403082,12.5132927 28.2344797,13.8207567 27.5242593,14.7551186 L19.7225208,22.5 L27.5718309,30.2448814 L27.5242593,30.2448814 Z"
+                          id="Path" fill="#3C948D"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

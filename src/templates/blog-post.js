@@ -19,6 +19,12 @@ const BlogPostWrapper = styled.div`
   display: grid;
   grid-gap: 40px;
   grid-template-columns: 1fr 45em 1fr;
+
+  @media (max-width: 1440px) {
+    grid-template-columns: minmax(100%, 45em);
+    grid-gap: 20px;
+    padding: 30px;
+  }
 `;
 
 const PostBody = styled.article`
@@ -28,6 +34,13 @@ const PostBody = styled.article`
   .gatsby-highlight {
     margin: 40px -60px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (max-width: 1440px) {
+    .gatsby-highlight {
+      margin: 0;
+      width: 100%;
+    }
   }
 
   pre {
@@ -91,6 +104,11 @@ const Title = styled.h2`
 const BackButtonWrapper = styled.div`
   justify-self: flex-end;
   padding-top: 10px;
+
+  @media (max-width: 1440px) {
+    justify-self: flex-start;
+    padding-top: 0px;
+  }
 `;
 
 const BioWrapper = styled.div`
@@ -100,6 +118,11 @@ const BioWrapper = styled.div`
 const RelatedContentWrapper = styled.div`
   width: 45em;
   margin: 50px auto;
+
+  @media (max-width: 1440px) {
+    width: 100%;
+    padding: 10px 100px;
+  }
 `;
 
 const RelatedArticles = styled.div`

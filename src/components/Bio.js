@@ -7,11 +7,11 @@ import Github from "../../assets/github.svg";
 const BioWrapper = styled.div`
   display: grid;
   grid-auto-flow: column;
-  place-items: center;
+  align-items: center;
+  justify-content: flex-start;
   grid-gap: 10px;
   border-radius: 8px;
   overflow: hidden;
-  width: max-content;
 `;
 
 const Avatar = styled.img`

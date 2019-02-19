@@ -32,6 +32,14 @@ const Content = styled.div`
   display: grid;
   grid-gap: 80px;
   grid-template-columns: 650px 350px;
+
+  @media (max-width: 1080px) {
+    max-width: 100%;
+    grid-template-columns: 1fr;
+    padding: 50px;
+    padding-top: 0;
+    grid-gap: 40px;
+  }
 `;
 
 const Articles = styled.main`
@@ -45,6 +53,10 @@ const SideMenu = styled.aside`
   display: grid;
   grid-auto-rows: max-content;
   grid-gap: 40px;
+
+  @media (max-width: 1080px) {
+    margin-top: 0px;
+  }
 `;
 
 const SideMenuTitle = styled.h4`

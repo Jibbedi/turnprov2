@@ -8,6 +8,10 @@ const Well = styled.div`
   display: grid;
   justify-items: center;
   padding: 120px;
+
+  @media (max-width: 1000px) {
+    padding: 40px 20px;
+  }
 `;
 
 const IntroText = styled.div`
@@ -19,7 +23,8 @@ const IntroText = styled.div`
 `;
 
 const SignUpWrapper = styled.div`
-  width: 45em;
+  width: 100%;
+  max-width: 700px;
 `;
 
 const NewsLetterWell = () => {

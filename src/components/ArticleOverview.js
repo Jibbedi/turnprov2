@@ -11,6 +11,10 @@ const ArticleSummaryWrapper = styled.div`
   padding: 40px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   border-left: 8px solid ${props => props.color};
+
+  @media (max-width: 1080px) {
+    padding: 20px;
+  }
 `;
 
 const Title = styled.h2`
@@ -47,6 +51,11 @@ const ArticleInfoContainer = styled.div`
   grid-gap: 15px;
   top: 40px;
   right: 40px;
+
+  @media (max-width: 1080px) {
+    top: 20px;
+    right: 20px;
+  }
 `;
 
 const Excerpt = styled.p`

@@ -16,7 +16,7 @@ const CategoryPanelWrapper = styled.div`
 `;
 
 const Icon = styled.img`
-  --size: 65%;
+  --size: 50px;
   width: var(--size);
   height: var(--size);
   object-fit: cover;

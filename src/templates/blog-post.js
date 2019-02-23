@@ -23,7 +23,7 @@ const BlogPostWrapper = styled.div`
   @media (max-width: 1440px) {
     grid-template-columns: minmax(100%, 45em);
     grid-gap: 20px;
-    padding: 30px;
+    padding: 20px;
   }
 `;
 
@@ -108,6 +108,7 @@ const BackButtonWrapper = styled.div`
   @media (max-width: 1440px) {
     justify-self: flex-start;
     padding-top: 0px;
+    padding-left: 10px;
   }
 `;
 
@@ -120,8 +121,9 @@ const RelatedContentWrapper = styled.div`
   margin: 50px auto;
 
   @media (max-width: 1440px) {
+    max-width: 800px;
     width: 100%;
-    padding: 10px 100px;
+    padding: 10px 20px;
   }
 `;
 
@@ -137,6 +139,7 @@ const Categories = styled.div`
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, 100px);
   grid-template-rows: 100px;
+  grid-auto-rows: 100px;
   padding: 10px 0;
 `;
 

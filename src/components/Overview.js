@@ -23,6 +23,12 @@ const Header = styled.div`
   * {
     color: white;
   }
+
+  @media (max-width: 590px) {
+    padding: 0 10px;
+    font-size: 1.6rem;
+    height: 250px;
+  }
 `;
 
 const Content = styled.div`
@@ -36,8 +42,8 @@ const Content = styled.div`
   @media (max-width: 1080px) {
     max-width: 100%;
     grid-template-columns: 1fr;
-    padding: 50px;
     padding-top: 0;
+    padding: 20px;
     grid-gap: 40px;
   }
 `;

@@ -15,11 +15,15 @@ const Well = styled.div`
 `;
 
 const IntroText = styled.div`
-  width: 60%;
+  max-width: 600px;
   text-align: center;
   font-size: 1.2rem;
   margin-bottom: 20px;
   color: white;
+
+  @media (max-width: 500px) {
+    font-size: 1rem;
+  }
 `;
 
 const SignUpWrapper = styled.div`

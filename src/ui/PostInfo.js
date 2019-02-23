@@ -4,10 +4,8 @@ import Clock from "../../assets/clock.svg";
 import Calendar from "../../assets/calendar.svg";
 
 const Footer = styled.div`
-  display: grid;
-  grid-auto-flow: column;
-  grid-gap: 20px;
-  grid-template-columns: max-content;
+  display: flex;
+  flex-wrap: wrap;
 `;
 
 const FooterInfo = styled.div`
@@ -17,6 +15,8 @@ const FooterInfo = styled.div`
   grid-template-columns: max-content;
   align-items: center;
   color: var(--bodyTextColor);
+  margin-right: 10px;
+  flex-shrink: 0;
 
   img {
     margin: 0;

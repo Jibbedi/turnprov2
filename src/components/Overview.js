@@ -40,7 +40,7 @@ const Content = styled.div`
   grid-template-columns: 650px 350px;
 
   @media (max-width: 1080px) {
-    max-width: 100%;
+    max-width: 690px;
     grid-template-columns: 1fr;
     padding-top: 0;
     padding: 20px;

@@ -2,6 +2,7 @@
 title: Static typing is your safety net
 date: 2018-10-03
 category: TypeScript
+level: Beginner
 tags: ["static typing", "typescript", "javascript"]
 ---
 

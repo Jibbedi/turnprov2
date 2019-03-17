@@ -10,5 +10,9 @@ export default {
   architecture: {
     mainColor: "#34495e",
     imageName: "architecture"
+  },
+  graphql: {
+    mainColor: "#E535AB",
+    imageName: "graphql"
   }
 };

@@ -2,6 +2,7 @@
 title: Open Closed Principle
 date: 2018-10-03
 category: Architecture
+level: Beginner
 tags: ["clean code", "ood"]
 ---
 

@@ -77,7 +77,7 @@ const ArticleSummary = ({ article }) => {
         <ArticleCategoryIcon
           src={require(`../../assets/${config.imageName}.svg`)}
         />
-        <AccentText>Beginner</AccentText>
+        <AccentText>{article.frontmatter.level}</AccentText>
       </ArticleInfoContainer>
       <Title>{article.frontmatter.title}</Title>
       <Excerpt>

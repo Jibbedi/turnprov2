@@ -2,6 +2,7 @@
 title: ng-template - the how, the when and the beauty
 date: 2018-10-10
 category: Angular
+level : Beginner
 tags: ["angular", "templates"]
 ---
 

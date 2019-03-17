@@ -31,6 +31,10 @@ const PostBody = styled.article`
   text-align: justify;
   padding-bottom: 60px;
 
+  img {
+    margin: 40px 0;
+  }
+
   .gatsby-highlight {
     margin: 40px -60px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -92,6 +96,16 @@ const PostBody = styled.article`
     font-weight: bold;
     color: var(--titleTextColor);
   }
+
+  h2,
+  h3 {
+    margin-top: 3rem;
+    margin-bottom: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
 `;
 
 const Title = styled.h2`
@@ -125,6 +139,11 @@ const RelatedContentWrapper = styled.div`
     width: 100%;
     padding: 10px 20px;
   }
+`;
+
+const SourceCodeLinkWrapper = styled.div`
+  margin: 20px 0;
+  margin-top: -20px;
 `;
 
 const RelatedArticles = styled.div`
@@ -167,6 +186,11 @@ const BlogPost = ({ data }) => {
           <BioWrapper>
             <Bio />
           </BioWrapper>
+          {post.frontmatter.github && (
+            <SourceCodeLinkWrapper>
+              <a href={post.frontmatter.github}>Source code available</a>
+            </SourceCodeLinkWrapper>
+          )}
           <PostBody dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
       </BlogPostWrapper>
@@ -208,6 +232,7 @@ export const query = graphql`
         tags
         title
         category
+        github
         date(formatString: "MMMM DD, YYYY")
       }
     }
@@ -224,6 +249,7 @@ export const query = graphql`
             title
             date(formatString: "MMMM DD, YYYY")
             category
+            level
           }
           fields {
             path

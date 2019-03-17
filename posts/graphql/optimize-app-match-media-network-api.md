@@ -1,9 +1,17 @@
 ---
-title: Improve your page speed with GraphQL, Match Media and the Network Information API
+title: Optimize your app with GraphQL, Match Media and the Network Information API
 date: 2019-03-17
 category: GraphQL
 level: Intermediate
-tags: ["graphql", "performance", "page speed", "speed"]
+tags:
+  [
+    "graphql",
+    "performance",
+    "page speed",
+    "speed",
+    "network information",
+    "match media",
+  ]
 github: https://github.com/Jibbedi/graphql-react-blog-demo/tree/graphql-finished
 ---
 

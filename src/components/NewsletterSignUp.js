@@ -43,8 +43,7 @@ const NewsletterSignUp = () => {
         <input
           type="text"
           name="b_0573c8cddcfe479bd6458f20a_b888680473"
-          tabindex="-1"
-          value=""
+          tabIndex="-1"
         />
       </div>
 

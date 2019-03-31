@@ -5,6 +5,7 @@ import Img from "gatsby-image";
 import { graphql } from "gatsby";
 import NewsletterWell from "../../components/NewsLetterWell";
 import Tick from "../../../assets/tick.svg";
+import GatsbyLink from "gatsby-link";
 
 const Wrapper = styled.div`
   width: 100vw;
@@ -46,7 +47,6 @@ const Title = styled.h1`
 `;
 
 const Highlight = styled.span`
-  color: #cb165b;
   font-weight: bold;
 `;
 
@@ -189,7 +189,7 @@ export default ({ data }) => {
       </ChapterOverview>
       <Center>
         Copyright 2019 - Johannes Kling |{" "}
-        <a href="https://www.turnpro.in">TurnPro.in</a>
+        <GatsbyLink to="/">TurnPro.in</GatsbyLink>
       </Center>
     </>
   );

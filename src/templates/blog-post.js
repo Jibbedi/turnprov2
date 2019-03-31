@@ -9,6 +9,7 @@ import NewsLetterWell from "../components/NewsLetterWell";
 import Bio from "../components/Bio";
 import ArticleSummary from "../components/ArticleOverview";
 import CategoryPanel from "../components/CategoryPanel";
+import GraphQlEbookPromo from "../components/GraphQLEbookPromo";
 
 require("prismjs/themes/prism-tomorrow.css");
 
@@ -162,6 +163,10 @@ const Categories = styled.div`
   padding: 10px 0;
 `;
 
+const PromoWrapper = styled.div`
+  margin: 30px 0px;
+`;
+
 const BlogPost = ({ data }) => {
   const { markdownRemark: post, related, categories } = data;
 
@@ -192,6 +197,11 @@ const BlogPost = ({ data }) => {
             </SourceCodeLinkWrapper>
           )}
           <PostBody dangerouslySetInnerHTML={{ __html: post.html }} />
+          {post.frontmatter.ebook && (
+            <PromoWrapper>
+              <GraphQlEbookPromo />
+            </PromoWrapper>
+          )}
         </div>
       </BlogPostWrapper>
       <NewsLetterWell />
@@ -232,6 +242,7 @@ export const query = graphql`
         tags
         title
         category
+        ebook
         github
         date(formatString: "MMMM DD, YYYY")
       }

@@ -130,7 +130,7 @@ Addy Osmani from the Google Chrome Team as a nice post about [adaptive serving.]
 
 ### Choosing data with enums
 
-GraphQL support `enums`, which are a perfect fit for choosing different output formats.
+GraphQL supports `enums`, which are a perfect fit for choosing different output formats.
 
 Our schema looks like this:
 

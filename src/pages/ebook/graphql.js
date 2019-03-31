@@ -32,6 +32,10 @@ const Chapters = styled.div`
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
 
+  div {
+    margin-bottom: 5px;
+  }
+
   @media (max-width: 1000px) {
     grid-template-columns: 1fr;
   }
@@ -54,11 +58,21 @@ const Step = styled.h3`
   display: flex;
   align-items: center;
   color: #cb165b;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 `;
 
 const Center = styled.div`
   text-align: center;
+`;
+
+const ReadOnlineWrapper = styled.span`
+  a {
+    color: #cb165b;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
 `;
 
 export default ({ data }) => {
@@ -153,7 +167,12 @@ export default ({ data }) => {
             <Step>Beginner</Step>
             <div>Introduction</div>
             <div>What is GraphQL?</div>
-            <div>Why GraphQL?</div>
+            <div>
+              Why GraphQL?{" "}
+              <ReadOnlineWrapper>
+                <GatsbyLink to="/graphql/why-graphql">Read online</GatsbyLink>
+              </ReadOnlineWrapper>
+            </div>
             <div>Playground explained</div>
             <div>Type System</div>
             <div>Queries</div>

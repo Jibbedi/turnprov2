@@ -7,8 +7,6 @@ tags: ["graphql", "rest", "query language"]
 ebook: https://www.turnpro.in/ebook/graphql/
 ---
 
-# Why GraphQL?
-
 What does the perfect API look like?
 It should be efficient, fast and easy to use for our users
 and it should be equally efficient, fast and easy for us to develop.

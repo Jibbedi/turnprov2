@@ -127,7 +127,7 @@ By swapping out those predefined endpoints we end up with a much more flexible s
 our users to look at the available data and pick the pieces they need. After all, they know best.
 In a way, we enable them to create their own handcrafted, perfectly tailored API.
 
-We only serve the exact data that is requirements without being forced to create a dedicated endpoint
+We only serve the exact data that is needed without being forced to create a dedicated endpoint
 for each user.
 
 That's efficiency and fastness at work.

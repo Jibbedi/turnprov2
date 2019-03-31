@@ -41,7 +41,7 @@ const GraphQlEbookPromo = () => (
         </ImageWrapper>
         <TextWrapper>
           <div>
-            This was an excerpt of my <b>free</b> ebook TurnPro in GraphQL.
+            This was an excerpt from my <b>free</b> ebook TurnPro in GraphQL.
           </div>
           <div>
             Get it <GatsbyLink to="/ebook/graphql/">here</GatsbyLink>.
